@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragments"
+        android:icon="@drawable/ic_movie"
+        android:title="Movie &amp; TV" />
+
+    <item
+        android:id="@+id/gamesFragment"
+        android:icon="@drawable/ic_music"
+        android:title="Music" />
+
+    <item
+        android:id="@+id/playlistFragments"
+        android:icon="@drawable/ic_book"
+        android:title="Books" />
+
+    <item
+        android:id="@+id/navigation_newsstand"
+        android:icon="@drawable/ic_news"
+        android:title="Newsstand" />
+
+</menu>

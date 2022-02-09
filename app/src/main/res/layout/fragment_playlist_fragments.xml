@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    tools:context=".UI.fragments.PlaylistFragments">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+ <!--     <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:orientation="vertical"
+          android:padding="@dimen/_5mdp">
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/tomJerryCard"
+              android:layout_width="match_parent"
+              android:layout_height="225dp"
+              app:cardBackgroundColor="#FEFEFE"
+              app:cardCornerRadius="20dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="4dp">
+
+
+                  <ImageView
+                      android:id="@+id/tomImage"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:scaleType="centerCrop"
+                      app:riv_corner_radius="20dp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="4dp"
+                      android:fontFamily="@font/lilita_one"
+                      android:paddingStart="10dp"
+                      android:text="Tom &amp; Jerry"
+                      android:textColor="@color/black"
+                      android:textSize="20sp" />
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/motuPatluCard"
+              android:layout_width="match_parent"
+              android:layout_height="225dp"
+              android:layout_below="@id/tomJerryCard"
+              android:layout_marginTop="20dp"
+              app:cardBackgroundColor="#FEFEFE"
+              app:cardCornerRadius="20dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="4dp">
+
+                  <ImageView
+                      android:id="@+id/motupatluImg"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:scaleType="centerCrop"
+                      app:riv_corner_radius="20dp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="4dp"
+                      android:fontFamily="@font/lilita_one"
+                      android:paddingStart="10dp"
+                      android:text="Motu Patlu"
+                      android:textColor="@color/black"
+                      android:textSize="20sp" />
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/doraemonCard"
+              android:layout_width="match_parent"
+              android:layout_height="225dp"
+              android:layout_below="@id/motuPatluCard"
+              android:layout_marginTop="20dp"
+              app:cardBackgroundColor="#FEFEFE"
+              app:cardCornerRadius="20dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="4dp">
+
+                  <ImageView
+                      android:id="@+id/doreamonIMG"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:scaleType="centerCrop"
+                      app:riv_corner_radius="20dp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="4dp"
+                      android:fontFamily="@font/lilita_one"
+                      android:paddingStart="10dp"
+                      android:text="Doraemon"
+                      android:textColor="@color/black"
+                      android:textSize="20sp" />
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/benTenCard"
+              android:layout_width="match_parent"
+              android:layout_height="225dp"
+              android:layout_below="@id/doraemonCard"
+              android:layout_marginTop="20dp"
+              app:cardBackgroundColor="#FEFEFE"
+              app:cardCornerRadius="20dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="4dp">
+
+                  <ImageView
+                      android:id="@+id/ben_10IMg"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:scaleType="center"
+                      app:riv_corner_radius="20dp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="4dp"
+                      android:fontFamily="@font/lilita_one"
+                      android:paddingStart="10dp"
+                      android:text="Ben 10"
+                      android:textColor="@color/black"
+                      android:textSize="20sp" />
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/oggy_and_coakroaches_Card"
+              android:layout_width="match_parent"
+              android:layout_height="225dp"
+              android:layout_below="@id/benTenCard"
+              android:layout_marginTop="20dp"
+              app:cardBackgroundColor="#FEFEFE"
+              app:cardCornerRadius="20dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="4dp">
+
+                  <ImageView
+                      android:id="@+id/oggy_img"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+
+                      android:scaleType="centerCrop"
+                      app:riv_corner_radius="20dp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="4dp"
+                      android:fontFamily="@font/lilita_one"
+                      android:paddingStart="10dp"
+                      android:text="Oggy and Coakroaches"
+                      android:textColor="@color/black"
+                      android:textSize="20sp" />
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/banglaCartoon"
+              android:layout_width="match_parent"
+              android:layout_height="225dp"
+              android:layout_below="@id/oggy_and_coakroaches_Card"
+              android:layout_marginTop="20dp"
+              app:cardBackgroundColor="#FEFEFE"
+              app:cardCornerRadius="20dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="4dp">
+
+                  <ImageView
+                      android:id="@+id/bangla_img"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:scaleType="centerCrop"
+                      app:riv_corner_radius="20dp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="4dp"
+                      android:fontFamily="@font/lilita_one"
+                      android:paddingStart="10dp"
+                      android:text="Bangla Cartoon"
+                      android:textColor="@color/black"
+                      android:textSize="20sp" />
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/mrBeanCard"
+              android:layout_width="match_parent"
+              android:layout_height="225dp"
+              android:layout_below="@id/banglaCartoon"
+              android:layout_marginTop="20dp"
+              app:cardBackgroundColor="#FEFEFE"
+              app:cardCornerRadius="20dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="4dp">
+
+                  <ImageView
+                      android:id="@+id/mr_beanImg"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:scaleType="centerCrop"
+                      app:riv_corner_radius="20dp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="4dp"
+                      android:fontFamily="@font/lilita_one"
+                      android:paddingStart="10dp"
+                      android:text="Mr Bean Cartoon"
+                      android:textColor="@color/black"
+                      android:textSize="20sp" />
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/hindiCartoonCard"
+              android:layout_width="match_parent"
+              android:layout_height="225dp"
+              android:layout_below="@id/mrBeanCard"
+              android:layout_marginTop="20dp"
+              app:cardBackgroundColor="#FEFEFE"
+              app:cardCornerRadius="20dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="4dp">
+
+                  <ImageView
+                      android:id="@+id/hindiIMG"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:scaleType="centerCrop"
+                      app:riv_corner_radius="20dp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="4dp"
+                      android:fontFamily="@font/lilita_one"
+                      android:paddingStart="10dp"
+                      android:text="Hindi Cartoon"
+                      android:textColor="@color/black"
+                      android:textSize="20sp" />
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+
+      </LinearLayout>
+-->
+</RelativeLayout>

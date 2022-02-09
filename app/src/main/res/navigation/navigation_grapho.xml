@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_grapho"
+    app:startDestination="@id/homeFragments">
+
+
+    <fragment
+        android:id="@+id/homeFragments"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.HomeFragments"
+        android:label="fragment_home_fragments"
+        tools:layout="@layout/fragment_home_fragments">
+
+
+        <action
+            android:id="@+id/action_homeFragments_to_playlistFragments"
+            app:destination="@id/playlistFragments"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_homeFragments_to_gameActiviy"
+            app:destination="@id/gameActiviy" />
+
+
+    </fragment>
+
+
+    <!--    <fragment
+            android:id="@+id/games_fragment"
+            android:name="com.mamunsproject.youtubekids.UI.fragments.Games_fragment"
+            android:label="fragment_games_fragment"
+            tools:layout="@layout/fragment_games_fragment" >
+            <action
+                android:id="@+id/action_games_fragment_to_homeFragments"
+                app:destination="@id/homeFragments"
+                app:enterAnim="@anim/from_left"
+                app:exitAnim="@anim/to_right"
+                app:popEnterAnim="@anim/from_right"
+                app:popExitAnim="@anim/to_left"/>
+        </fragment>-->
+
+    <activity
+        android:id="@+id/gameActiviy"
+        android:name="com.mamunsproject.youtubekids.Games.Games_MainActivity"
+        android:label="activity_second"
+        tools:layout="@layout/activity_games_main" />
+
+
+    <fragment
+        android:id="@+id/playlistFragments"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.PlayListFragment_java"
+        android:label="fragment_playlist_fragments"
+        tools:layout="@layout/fragment_play_list_java">
+
+        <action
+            android:id="@+id/action_playlistFragments_to_homeFragments"
+            app:destination="@id/homeFragments"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+
+        <action
+            android:id="@+id/action_playlistFragments_to_tom_Jerry_Fragment"
+            app:destination="@id/tom_Jerry_Fragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+        <action
+            android:id="@+id/action_playlistFragments_to_motuPatluFragment"
+            app:destination="@id/motuPatluFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_playlistFragments_to_doaemonFragment"
+            app:destination="@id/doaemonFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_playlistFragments_to_oggyAndCokroachesFragment"
+            app:destination="@id/oggyAndCokroachesFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_playlistFragments_to_mrBeanCartoonFragment"
+            app:destination="@id/mrBeanCartoonFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_playlistFragments_to_hindiCartoonFragment"
+            app:destination="@id/hindiCartoonFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_playlistFragments_to_ben10"
+            app:destination="@id/ben10"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_playlistFragments_to_banglaCartoon2"
+            app:destination="@id/banglaCartoon2"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tom_Jerry_Fragment"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.Tom_Jerry_Fragment"
+        android:label="fragment_tom__jerry_"
+        tools:layout="@layout/fragment_tom__jerry_">
+
+        <action
+            android:id="@+id/action_tom_Jerry_Fragment_to_playlistFragments"
+            app:destination="@id/playlistFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/motuPatluFragment"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.MotuPatluFragment"
+        android:label="fragment_motu_patlu"
+        tools:layout="@layout/fragment_motu_patlu">
+        <action
+            android:id="@+id/action_motuPatluFragment_to_playlistFragments"
+            app:destination="@id/playlistFragments" />
+        <action
+            android:id="@+id/action_motuPatluFragment_to_playlistFragments2"
+            app:destination="@id/playlistFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/banglaCartoon2"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.BanglaCartoon"
+        android:label="fragment_bangla_cartoon"
+        tools:layout="@layout/fragment_bangla_cartoon">
+        <action
+            android:id="@+id/action_banglaCartoon2_to_playlistFragments"
+            app:destination="@id/playlistFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/ben10"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.Ben10"
+        android:label="fragment_ben10"
+        tools:layout="@layout/fragment_ben10">
+        <action
+            android:id="@+id/action_ben10_to_playlistFragments"
+            app:destination="@id/playlistFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/hindiCartoonFragment"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.HindiCartoonFragment"
+        android:label="fragment_hindi_cartoon"
+        tools:layout="@layout/fragment_hindi_cartoon">
+        <action
+            android:id="@+id/action_hindiCartoonFragment_to_playlistFragments"
+            app:destination="@id/playlistFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/mrBeanCartoonFragment"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.MrBeanCartoonFragment"
+        android:label="fragment_mr_bean_cartoon"
+        tools:layout="@layout/fragment_mr_bean_cartoon">
+        <action
+            android:id="@+id/action_mrBeanCartoonFragment_to_playlistFragments"
+            app:destination="@id/playlistFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/oggyAndCokroachesFragment"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.OggyAndCokroachesFragment"
+        android:label="fragment_oggy_and_cokroaches"
+        tools:layout="@layout/fragment_oggy_and_cokroaches">
+        <action
+            android:id="@+id/action_oggyAndCokroachesFragment_to_playlistFragments"
+            app:destination="@id/playlistFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/doaemonFragment"
+        android:name="com.mamunsproject.youtubekids.UI.fragments.DoaemonFragment"
+        android:label="fragment_doaemon"
+        tools:layout="@layout/fragment_doaemon">
+        <action
+            android:id="@+id/action_doaemonFragment_to_playlistFragments"
+            app:destination="@id/playlistFragments" />
+    </fragment>
+</navigation>
